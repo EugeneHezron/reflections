@@ -1,10 +1,23 @@
-What happens when you initialize a repository? Why do you need to do it?
+What happens when you initialize a repository?
+
+	A hidden directory .git is created inside the directory where the command was run which identifies the directory as a git repository.
+
+ Why do you need to do it?
+
+	This is inorder for the directory to be recognized as a git repository, if not a command such as git status returns:
+	
+		fatal: Not a git repository (or any of the parent directories): .git
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+	The staging area is where all files that are to be commited at one time are added before the git commit command is executed.
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+	It is a separate entity that can be used to manage just which commits are to be made at one time. You can therefore make separate commits for
+	separate logical changes by staging and commiting each logical change at a time.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
